@@ -2,7 +2,7 @@ import requests
 import json
 def weather():
     city_name=input('Enter city name : ')
-    api_key="10fd1c974834f3245f642bd6ea330aef"
+    api_key="5a3fd7537ce0abc9405aff0aa8e32d0e"
     api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+ city_name + "&units=metric&appid="+api_key)
     api = json.loads(api_request.content)
     current_temperature = api['main']['temp']
